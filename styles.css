@@ -1,0 +1,97 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply background color and font styles */
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+header {
+    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+.login-button, .signup-button {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.login-button:hover, .signup-button:hover {
+    background-color: #ff221f;
+}
+
+/* Style the hero section */
+.hero {
+    text-align: center;
+    padding: 100px 0;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Style movie recommendations */
+.movie-recommendations {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movie {
+    flex: 0 0 calc(33.33% - 20px);
+    position: relative;
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.movie img:hover {
+    transform: scale(1.05);
+}
